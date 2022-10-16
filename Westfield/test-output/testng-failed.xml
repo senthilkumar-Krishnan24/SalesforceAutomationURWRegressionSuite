@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Westfield Salesforce Application - SIT Regression]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LoginPageTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.salesforce.automation.Westfield.LoginPage">
+        <methods>
+          <include name="loginPageTest"/>
+          <include name="browserSetup"/>
+        </methods>
+      </class> <!-- com.salesforce.automation.Westfield.LoginPage -->
+      <class name="com.salesforce.automation.Westfield.LeadCreationTest">
+        <methods>
+          <include name="browserSetup"/>
+          <include name="createNewLeadTest"/>
+        </methods>
+      </class> <!-- com.salesforce.automation.Westfield.LeadCreationTest -->
+    </classes>
+  </test> <!-- LoginPageTest(failed) -->
+</suite> <!-- Failed suite [Westfield Salesforce Application - SIT Regression] -->
