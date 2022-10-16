@@ -2,8 +2,6 @@ package com.salesforce.automation.Westfield;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
-
 import io.testproject.sdk.drivers.web.ChromeDriver;
 
 public class BrowserConfiguration {
@@ -12,7 +10,7 @@ public static ChromeDriver driver;
 	
 	
 	@BeforeTest
-	@Parameters({"browser"})
+	//@Parameters({"browser"})
 	public void browserSetup() throws Exception 
 	{
 		
