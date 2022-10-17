@@ -16,12 +16,26 @@
  	<maven.compiler.target>1.6</maven.compiler.target>
   </properties>
   
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M3</version>
+            <configuration>
+                <suiteXmlFiles>
+                    <suiteXmlFile>TestNG2.xml</suiteXmlFile>
+                </suiteXmlFiles>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+  
  
 
   <dependencies>
     
-     <!-- https://mvnrepository.com/artifact/io.testproject/java-sdk -->
-		<dependency>
+     	<dependency>
 		    <groupId>io.testproject</groupId>
 		    <artifactId>java-sdk</artifactId>
 		    <version>1.3.0-RELEASE</version>
@@ -38,6 +52,14 @@
       <artifactId>guava</artifactId>
       <version>31.0.1-jre</version>
      </dependency>
-    
+     
+     	<dependency>
+		    <groupId>org.apache.maven.archetype</groupId>
+		    <artifactId>archetype-common</artifactId>
+		    <version>3.0.0</version>
+		</dependency>
+     
   </dependencies>
+  
+  <description>Salesforce automation script.</description>
 </project>
