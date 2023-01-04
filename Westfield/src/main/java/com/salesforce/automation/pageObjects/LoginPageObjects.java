@@ -25,7 +25,7 @@ public class LoginPageObjects extends BrowserConfiguration {
 	public void loginPageScreen() throws InterruptedException {
 		
 		usrname.sendKeys("senthilkumar.k@tavant.com.sit");
-		pasword.sendKeys("welcomewelcomewelcomewelcome@2022");
+		pasword.sendKeys("welcomewelcomewelcomewelcome2022");
 		loginButton.click();
 
 		

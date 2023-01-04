@@ -4,6 +4,12 @@
   <test thread-count="5" name="LoginPageTest(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
+      <class name="com.salesforce.automation.Westfield.LoginPage">
+        <methods>
+          <include name="loginPageTest"/>
+          <include name="browserSetup"/>
+        </methods>
+      </class> <!-- com.salesforce.automation.Westfield.LoginPage -->
       <class name="com.salesforce.automation.Westfield.LeadCreationTest">
         <methods>
           <include name="browserSetup"/>
