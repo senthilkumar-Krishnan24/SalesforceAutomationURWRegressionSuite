@@ -46,11 +46,11 @@ public class LeadCreationObjects extends BrowserConfiguration{
 	@FindBy(xpath="//input[@name='postalCode']") WebElement postalCode ;
 	@FindBy(xpath="//button[@name='SaveEdit']") WebElement saveButtton; 
 	
-	public LeadCreationObjects(){
-		
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-	}
+	/*
+	 * public LeadCreationObjects(){
+	 * 
+	 * this.driver = driver; PageFactory.initElements(driver, this); }
+	 */
 	
 	WaitDriverClass waitCustom = new WaitDriverClass();
 	JSExecutorClickAction jsExecutorClick = new JSExecutorClickAction();

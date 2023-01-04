@@ -15,11 +15,11 @@ public class LoginPageObjects extends BrowserConfiguration {
 	@FindBy(css="input#password[name^='pw']") WebElement pasword;
 	@FindBy(css="input#Login") WebElement loginButton;
 	
-	public LoginPageObjects(){
-		
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-	}
+	/*
+	 * public LoginPageObjects(){
+	 * 
+	 * this.driver = driver; PageFactory.initElements(driver, this); }
+	 */
 	
 
 	public void loginPageScreen() throws InterruptedException {
