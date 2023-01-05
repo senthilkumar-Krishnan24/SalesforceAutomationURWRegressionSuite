@@ -15,7 +15,7 @@ public static ChromeDriver driver;
 	{
 		
 		driver = new ChromeDriver("2xW7DgT91IA2vmpo0xZpFLTC6dElC2Mf-w-xjSw-xtM1", new ChromeOptions());
-		driver.navigate().to("https://westfield--sit.sandbox.my.salesforce.com/?login");
+		driver.navigate().to("https://westfield--uat.sandbox.my.salesforce.com/?login");
 	}
 
 }
